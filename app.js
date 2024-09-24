@@ -40,7 +40,8 @@ const cvc = document.getElementById('cvc').value;
 
 btn.addEventListener('click', () => {
     showBox.style.display = "none";
-    form.style.display = 'flex'
+    form.style.display = 'flex';
+    form.style.flexDirection = 'column';
     inputs.forEach(input => input.value = '')
 })
 
