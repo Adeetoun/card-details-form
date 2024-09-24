@@ -20,11 +20,11 @@ const cvc = document.getElementById('cvc').value;
  console.log('clicked');
     const numericPattern = /^[0-9]/;
     inputs.forEach((input, index) => {
-        if (input.value.trim() === '' || !numericPattern.test(input.value.trim())) 
-        {   error[index].style.display = 'block';
-            setTimeout(function() {
-            error[index].style.display = 'none';
-            }, 2000)
+        if (input.value.trim() === '' || !numericPattern.test(input.value.trim())) {   
+        error[index].style.display = 'block';
+        setTimeout(function() {
+        error[index].style.display = 'none';
+        }, 2000)
     } else {
          showBox.style.display = 'block';
          form.style.display = 'none';
