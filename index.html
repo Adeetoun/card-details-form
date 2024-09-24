@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card Details Form</title>
+</head>
+<body>
+<div class="container">
+ <div class="flex">
+    <div class="flex1">
+        <img src="images/bg-card-front.png" alt="front-image" id="front">
+        <img src="images/card-logo.svg" alt="logo" id="logo">
+        <div class="text1">
+        <h1 id="text-number">0000 0000 0000 0000</h1>
+        <p id="text-name">Jane Doe <span id="text-month"> 00/<span id="text-year">00</span></span></p>
+        </div>
+        <img src="images/bg-card-back.png" alt="back-image" id="back">
+        <div class="text2">
+        <p id="text-cvc">000</p>
+        </div>
+            </div>
+            <div class="flex2">
+        <form action="submit">
+            <label for="name">CARDHOLDER NAME</label>
+            <input type="text" placeholder="e.g Jane Doe" id="name" name="name" class="my-input" required>
+            <label for="number">CARD NUMBER</label>
+            <input type="text" placeholder="1234 5678 9123 0000" id="number" name="number" class="my-input" required>
+            <p class="p-error">Wrong format, numbers only</p>
+            <div class="form-flex">
+            <div class="form1">
+            <label for="name">EXP. DATE (MM/YY)</label>
+            <input type="text" placeholder="MM" id="mm" name="mm" class="my-input" required>
+            <p class="p-error">Can't be blank</p>
+            <input type="text" placeholder="YY" id="yy" name="yy" class="my-input" required>
+            </div>
+            <div class="form2">
+            <label for="name">CVC</label>
+            <input type="text" placeholder="e.g 123" id="cvc" name="cvc" class="my-input" required>
+            <p class="p-error">Can't be blank</p>
+            </div>
+            </div>
+            <button class="btn" id="submit-btn">Confirm</button>
+        </form>
+            <div class="box">
+                <img src="images/icon-complete.svg" alt="complete">
+                <h1>THANK YOU!</h1>
+                <p>We've added your card details</p>
+                <button class="btn" id="continue-btn">Continue</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

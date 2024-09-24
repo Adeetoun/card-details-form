@@ -1,0 +1,194 @@
+@import url('https://fonts.google.com/specimen/Space+Grotesk');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Grotesk';
+    line-height: 2.0;
+    font-size: 16px;
+}
+.text1{
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+}
+.text1 p{
+    display: flex;
+    justify-content: space-between;
+}
+.text2{
+    color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+}
+.p-error{
+    color: hsl(0, 100%, 66%);
+    font-size: 14px;
+    display: none;
+}
+.flex{
+    display: flex;
+}
+.flex1{
+    background:url('images/bg-main-desktop.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 40%;
+}
+.flex1 img{
+    padding: 10px;
+    margin: 10px;
+}
+.flex1 #front{
+    position: absolute;
+    left: 8%;
+    top: 5%
+}
+.flex1 #logo{
+    position: absolute;
+    left: 10%;
+    top: 10%
+}
+.flex1 #back{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+.flex2{
+    border: 5px solid #fff;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    margin: auto;
+    width: 40%;
+}
+.flex2 form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+.flex2 form label{
+    color: hsl(278, 68%, 11%);
+}
+.flex2 form input {
+    padding: 10px;
+    color: hsl(270, 3%, 87%);
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid #333;
+    outline: none;
+    cursor: pointer;
+}
+.flex2 form input:focus {
+    border-color: hsl(278, 95%, 43%); 
+}
+.flex2 .form-flex{
+    display: flex;
+    width: 100%;
+}
+.flex2 .form-flex label{
+   display: block;
+}
+.flex2 .form-flex input{
+ width: 40%;
+}
+.flex2 .form-flex .form1{
+    width: 50%;
+}
+.flex2 .form-flex .form2{
+   width: 50%;
+}
+.btn{
+    margin: 10px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    background: hsl(278, 68%, 11%);
+    color: #fff;
+    width: 70%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.box{
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 20%;
+    width: 50%;
+    display: none;
+}
+@media(max-width: 768px) {
+    .container{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+    .text1{
+        color: #fff;
+        position: absolute;
+        top: 65vh;
+        left: 12vw;
+        z-index: 5;
+    }
+    .text1 p{
+        display: flex;
+        justify-content: space-between;
+    }
+    .text2{
+        color: #fff;
+        position: absolute;
+        top: 38vh;
+        left: 80vw;
+        z-index: 2;
+    }
+   .flex{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+   }
+   .flex1{
+    background-image: url('images/bg-main-mobile2.png');
+    width: 100%;
+}
+   .flex #front{
+      position: absolute;
+      top: 42vh;
+      left: -2vw;
+      z-index: 2;
+      width: 90%;
+   }
+   .flex #back{
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    z-index: 1;
+    width: 90%;
+   }
+   .flex #logo{
+    position: absolute;
+    top: 45vh;
+    z-index: 4;
+    left: 5vw;
+}
+   .flex2{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+   }
+   .flex2 form label{
+    font-weight: 500;
+   }
+   .box{
+    display: none;
+    position: absolute;
+    top: 95vh;
+    width: 80%;
+    height: 80%;
+   }
+}
