@@ -77,10 +77,10 @@ body{
 }
 .flex2 form input {
     padding: 10px;
-    color: hsl(270, 3%, 87%);
+    color: hsl(278, 68%, 11%);
     width: 70%;
     border-radius: 10px;
-    border: 1px solid #333;
+    border: 2px solid #333;
     outline: none;
     cursor: pointer;
 }
@@ -151,10 +151,12 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 0;
+    position: relative;
    }
    .flex1{
     background-image: url('images/bg-main-mobile2.png');
     width: 100%;
+    position: relative;
 }
    .flex #front{
       position: absolute;
@@ -177,6 +179,7 @@ body{
     left: 5vw;
 }
    .flex2{
+    position: relative;
     padding: 10px;
     width: 100%;
     margin-bottom: 5px;
@@ -187,7 +190,7 @@ body{
    .box{
     display: none;
     position: absolute;
-    top: 95vh;
+    top: 100vh;
     width: 80%;
     height: 80%;
    }
