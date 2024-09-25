@@ -24,7 +24,7 @@ body{
     color: #fff;
     position: absolute;
     top: 70%;
-    left: 32%;
+    left: 40%;
 }
 .p-error{
     color: hsl(0, 100%, 66%);
@@ -46,18 +46,18 @@ body{
 }
 .flex1 #front{
     position: absolute;
-    left: 2%;
+    left: 5%;
     top: 5%
 }
 .flex1 #logo{
     position: absolute;
-    left: 5%;
+    left: 7%;
     top: 10%
 }
 .flex1 #back{
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 9%;
 }
 .flex2{
     border: 5px solid #fff;
@@ -124,14 +124,14 @@ body{
 }
 @media(max-width: 768px) {
     .container{
-        position: fixed;
+        position: relative;
         max-width: 100%;
         height: 100vh;
     }
     .text1{
         color: #fff;
-        position: fixed;
-        top: 30vh;
+        position: absolute;
+        top: 50vh;
         left: 10vw;
         z-index: 5;
     }
@@ -141,8 +141,8 @@ body{
     }
     .text2{
         color: #333;
-        position: fixed;
-        top: 15.5vh;
+        position: absolute;
+        top: 23.5vh;
         left: 78vw;
         z-index: 2;
     }
@@ -156,26 +156,26 @@ body{
    .flex1{
     background-image: url('images/bg-main-mobile2.png');
     width: 100%;
-    height: 30vh;
-    position: fixed;
+    height: 50vh;
+    position: absolute;
 }
    .flex #front{
-      position: fixed;
-      top: 17.5vh;
+      position: absolute;
+      top: 27.5vh;
       left: -2vw;
       z-index: 2;
       max-width: 90%;
    }
    .flex #back{
-    position: fixed;
+    position: absolute;
     top: 5vh;
     left: 5vw;
     z-index: 1;
     max-width: 90%;
    }
    .flex #logo{
-    position: fixed;
-    top: 21vh;
+    position: absolute;
+    top: 31vh;
     z-index: 4;
     left: 5vw;
 }
@@ -186,8 +186,8 @@ body{
     margin-bottom: 5px;
    }
    .flex2 form{
-    position: fixed;
-    top: 55vh;
+    position: absolute;
+    top: 75vh;
     max-width: 100%;
     height: 80%;
     padding: 0;
@@ -197,9 +197,9 @@ body{
     font-weight: 500;
    }
    .box{
-    position: fixed;
+    position: absolute;
     text-align: center;
-    top: 60vh;
+    top: 80vh;
     width: 80%;
     display: none;
     height: 100%;
